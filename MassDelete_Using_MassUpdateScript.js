@@ -20,8 +20,8 @@ define(['N/record'],
                 // Log the parameters for debugging purposes
                 log.debug("params ", JSON.stringify(params));
 
-                // Load the record to be deleted
-                var objRecordId = record.load({
+                // using record.delete API to DELETE
+                var objRecordId = record.delete({
                     type: params.type,
                     id: params.id
                 });
